@@ -108,7 +108,7 @@ currentName.innerText = `${inputName}'s Current Metrics: `
 
 
 //Relating to switching sleeping background
-let awake = document.querySelector('#awake');
+let backgroundAwake = document.querySelector('#background-awake');
 let backgroundSleep = document.querySelector('#background-sleep');
 
 // awake.style.opacity = "0%";
@@ -165,6 +165,8 @@ play.addEventListener('click', e => {
 
 
 //Sets the game to count repeatedly after the prompt
+//Uncomment Code below
+
 const age = setInterval(() => {
 
       //If statement alerting the user that they have aged

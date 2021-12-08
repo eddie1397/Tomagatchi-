@@ -1,3 +1,142 @@
 body {
   background-color: Lavender;
 }
+
+
+
+/* ID SELECTORS */
+
+#character {
+  z-index: 4;
+  position: absolute;
+  bottom: 50px;
+  right: 300px;
+
+
+}
+
+#character2 {
+  z-index: 3;
+  position: absolute;
+  bottom: 50px;
+  right: 300px;
+
+
+
+
+}
+
+#character3 {
+  z-index: 2;
+  position: absolute;
+  bottom: 50px;
+  right: 300px;
+
+
+
+
+}
+
+
+#awake {
+opacity: 0%;
+
+}
+
+
+
+/* This is the used to make the opacity of the imag change on the clickEvent listner */
+/* #awake, #sleep {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+
+
+} */
+
+
+/* CLASS SELECTORS */
+.flex-container {
+  display: flex;
+   height: 100%;
+   align-items: flex-start;
+   background-color: DodgerBlue;
+
+
+}
+
+.left-view {
+  background-color: #f1f1f1;
+  width: 33%;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  border-radius: 40px;
+
+
+}
+
+
+.right-view {
+  background-color: #f1f1f1;
+  width: 66%;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  /* height: 100vh; */
+  border-radius: 40px;
+  /* position: relative; */
+
+
+}
+
+/* IMSGR */
+#awake {
+  opacity:100%;
+
+}
+
+#background-sleep {
+  opacity: 0;
+}
+
+.background-image {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: auto;
+    height: 650px;
+    padding-top: 20px;
+    border-radius: 20px;
+
+
+}
+
+
+
+.image1 {
+  position: relative;
+  width: 500px;
+  /* background-repeat: no-repeat;
+  background-position: center; */
+  z-index: 1;
+  margin: 0 auto;
+  height: 700px;
+  /* background-color: red; */
+
+
+
+}
+
+
+/* .image2 {
+  position: absolute;
+  bottom: 20px;
+  z-index: 2;
+  left: 250px;
+
+} */

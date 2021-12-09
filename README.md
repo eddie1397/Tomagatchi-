@@ -22,8 +22,10 @@ Feel free to play multiple times. If you would like to play again just refresh t
 HTML, CSS and JavaScript
 
 
-## Access Game Here: https://eddie1397.github.io/Tomagatchi-/
+## Access Game Here: 
+
+https://eddie1397.github.io/Tomagatchi-/
 
 
-z
+
 

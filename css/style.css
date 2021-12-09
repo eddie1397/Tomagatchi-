@@ -36,6 +36,12 @@ button {
 #eat-button:hover {
   font-size: 12px;
   background-color:#efc8ae;
+  animation-name: btnChange;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+
 
 }
 
@@ -43,11 +49,21 @@ button {
 #sleep-button:hover {
   font-size: 12px;
   background-color: #AEEFEC;
+  animation-name: btnChange3;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+
 }
 
 #play-button:hover {
   font-size: 12px;
   background-color: #b7b7ef;
+  animation-name: btnChange2;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 
@@ -62,6 +78,7 @@ button {
 
 
 }
+
 
 #character2 {
   z-index: 3;
@@ -85,9 +102,22 @@ button {
 
 }
 
+@keyframes btnChange {
+  from {background-color: #b7efae;}
+  to {background-color: #efb7ae;}
 
-#awake {
-opacity: 0%;
+
+}
+
+@keyframes btnChange2 {
+    from {background-color: #efe2ae; }
+    to {background-color: #efaedf;}
+
+}
+
+@keyframes btnChange3 {
+    from {background-color: #7aa7a7; }
+    to {background-color: #efecae;}
 
 }
 

@@ -167,41 +167,51 @@ play.addEventListener('click', e => {
 //Sets the game to count repeatedly after the prompt
 //Uncomment Code below
 
-const age = setInterval(() => {
 
-      //If statement alerting the user that they have aged
-      if (tomDoe.age === 5 || tomDoe.age === 10 || tomDoe.age === 15) {
-          alert('Hello you have aged.');
-      }
+  const age = setInterval(() => {
 
-      //If statement testing whether a user has exceeded the number for attributes
-      if (tomDoe.hunger < 0 || tomDoe.sleep < 0 || tomDoe.bordem < 0) {
-        alert(`GAME OVER! \n ${tomDoe.name} has died!`)
-        clearInterval(age);
+        //If statement alerting the user that they have aged
+        if (tomDoe.age === 10 || tomDoe.age === 20 || tomDoe.age === 30) {
+            alert('Hello you have aged.');
+        }
 
-      }
+        //If statement testing whether a user has exceeded the number for attributes
+        if (tomDoe.hunger < 0 || tomDoe.sleep < 0 || tomDoe.bordem < 0) {
+          alert(`GAME OVER! \n ${tomDoe.name} has died!`)
+          clearInterval(age);
+          character.style.opacity = 0;
+          character2.style.opacity = 0
+          character3.remove();
+        }
 
-      if (tomDoe.hunger > 20 || tomDoe.bordem > 20) {
-        alert(`GAME OVER! \n ${tomDoe.name} has died!`)
-        clearInterval(age);
+        if (tomDoe.hunger > 20 || tomDoe.bordem > 20) {
+          alert(`GAME OVER! \n ${tomDoe.name} has died!`)
+          clearInterval(age);
+          character.style.opacity = 0;
+          character2.style.opacity = 0
+          character3.remove();
 
-      }
 
-      if (tomDoe.age >= 5 && tomDoe.age <= 9) {
-        character.style.opacity = 0;
+        }
 
-      } if (tomDoe.age >= 10 && tomDoe.age <= 14) {
-        character2.style.opacity = 0
+        if (tomDoe.age >= 10 && tomDoe.age <= 20) {
+          character.style.opacity = 0;
 
-      } else if (tomDoe.age === 60) {
-        character3.remove();
-        alert(`GAME OVER! \n ${tomDoe.name} has died!`)
-        clearInterval(age);
-      }
-    tomDoe.gettingOlder();
-    currentAge.innerText = `Current Age: ${tomDoe.age}`;
+        } if (tomDoe.age >= 21 && tomDoe.age <= 31) {
+          character2.style.opacity = 0
 
-}, 1000);
+        } else if (tomDoe.age === 45) {
+          character3.remove();
+          alert(`GAME OVER! \n ${tomDoe.name} has died!`)
+          clearInterval(age);
+        }
+      tomDoe.gettingOlder();
+      currentAge.innerText = `Current Age: ${tomDoe.age}`;
+
+  }, 1000);
+
+
+
 
 
 
